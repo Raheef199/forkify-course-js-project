@@ -2,7 +2,13 @@
   "name": "forkify",
   "version": "1.0.0",
   "description": "Recipe application",
-  "default": "index.html",
+  "default": "dist/index.html",
+  "targets": {
+    "main": false
+  },
+  "alias": {
+    "process": false
+  },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
@@ -16,7 +22,6 @@
   },
   "dependencies": {
     "core-js": "^3.36.0",
-    "fractional": "^1.0.0",
     "fracty": "^1.0.11",
     "regenerator-runtime": "^0.14.1"
   }
